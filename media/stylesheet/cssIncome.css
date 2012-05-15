@@ -1,0 +1,14 @@
+body {
+
+}
+.free_space{
+	height:300px;
+}
+#add_source{
+	width: 150px;	
+	margin-left: 40px;
+	border-style: dotted;	
+}
+tr{
+	width: 150px;
+}

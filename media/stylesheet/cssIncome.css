@@ -4,11 +4,28 @@ body {
 .free_space{
 	height:300px;
 }
-#add_source{
-	width: 150px;	
-	margin-left: 40px;
-	border-style: dotted;	
+
+.div{
+	float: left;width: 140px;padding-left: 15px;
 }
-tr{
-	width: 150px;
+.incom_blance{
+	margin-left: auto;
+	margin-right: auto;
+	height:50px;
+	width: 800px;
+	border: groove;
+	border-color:#FF0000;
+	border-radius:10px;
 }
+
+.s_value{
+	border-left:solid; border-radius:15px;
+	float: right;
+	width:49%;
+}
+.s_title{
+	
+	float: left; 
+	width:49%;
+}
+

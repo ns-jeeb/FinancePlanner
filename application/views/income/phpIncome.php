@@ -5,29 +5,26 @@ April - 2012
 <hr style="color: red; size: 3px;" />
 
 <div class="incom_blance">
-	<div class="title"><p>Total Incom</p></div>
-	<div class="value1"><p>$1560.00</p></div>
+	<div class="s_title"><p>Income Source 1</p></div>
+	<div class="s_value"><p style="float: right;">$1560.00</p></div>
 	
 </div>
 
 <div class="incom_blance">
-	<div class="title"><p>Total Incom</p></div>
-	<div class="value1"><p>$1560.00</p></div>
+	<div class="s_title"><p>Income Source 2</p></div>
+	<div class="s_value"><p style="float: right;">$1560.00</p></div>
 	
 </div>
 
 <div class="incom_blance">
 	<!---->
+	<div class="div"><input type="button" value="+" /></div>
+	<div class="div"style="border-style:dotted; ">Add Source</div>
+	<div class="div">from:</div>
+	<div class="div">To:</div>
+	<div class="div"></div>
+	<div class="div" ><input type="button" value="^"style="float: right;" /></div>
 	
-	
-	<table style="float:right;width: 100%;">
-		<tr><input type="button" value="+" /></tr>
-		<tr><div id="add_source">Add Source</div></tr>
-		<tr>from:</tr>
-		<tr>To:</tr>
-		
-	</table>
-	<div class="value1" style="float: right;">$1560.00</div>
 	
 </div>
 
@@ -38,6 +35,6 @@ April - 2012
 
 <div class="incom_blance">
 	<div class="title"><p>Total Incom</p></div>
-	<div class="value1"><p>$1560.00</p></div>
+	<div class="s_value"><p style="float: right";>$1560.00</p></div>
 	
 </div>

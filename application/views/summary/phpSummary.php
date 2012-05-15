@@ -15,9 +15,9 @@ April - 2012
 
 <div class="div_pre_post_exp" >
 	<div class="title"><p>Pre-Saving</p></div>
-	<div class="value" style="">
-		<div class="devider"><p>$100.00</p></div>		
-		<div  style=""><p>$1460.00</p></div>		
+	<div class="value">
+		<div><p style="border-bottom-style: dotted;">$100.00</p></div>		
+		<div><p>$1460.00</p></div>		
 	</div>	
 </div>
 
@@ -25,7 +25,7 @@ April - 2012
 <div class="div_pre_post_exp" >
 	<div class="title"><p>Expenses</p></div>
 	<div class="value" >
-		<div class="devider"><p>$900</p></div>		
+		<div><p style="border-bottom-style: dotted;">$900</p></div>		
 		<div><p>$560</p></div>		
 	</div>	
 </div>
@@ -34,7 +34,7 @@ April - 2012
 <div class="div_pre_post_exp" >
 	<div class="title"><p>Post-Saving</p></div>
 	<div class="value" >
-		<div class="devider"><p>$250</p></div>		
+		<div><p style="border-bottom-style: dotted;">$250</p></div>		
 		<div><p>$310</p></div>		
 	</div>	
 </div>
@@ -45,4 +45,3 @@ April - 2012
 	<div class="value1"><p>$310</p></div>
 	
 </div>
-	

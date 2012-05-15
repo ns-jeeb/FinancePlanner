@@ -32,6 +32,8 @@
 					'media/stylesheet/cssIncome.css',
 					'media/stylesheet/cssPostSaving.css',
 					'media/stylesheet/cssPreSaving.css',
+					'media/stylesheet/cssFooter.css',
+					'media/stylesheet/cssHeader.css',
 				);
 				
 				$scripts = array 
@@ -40,7 +42,9 @@
 					'media/javaScript/jsSummary.js',
 					'media/javaScript/jsIncome.js',
 					'media/javaScript/jsPostSaving.js',
-					'media/javaScript/jsPreSaving.js',					
+					'media/javaScript/jsPreSaving.js',
+					'media/javaScript/jsFooter.js',
+					'media/javaScript/jsHeader.js',					
 				);
 				$this->template->styles = array_merge($this->template->styles, $styles);
 				$this->template->scripts = array_merge($this->template->scripts, $scripts);

@@ -4,23 +4,11 @@
 	{
 		public function action_index()
 		{
-			$income_view = new View('income/phpIncome');	
-			$this->template->set('financePlanner_content',$income_view);
-			$this->template->title = _('Income');
-			$this->setHeader();
-			$this->setFooter();			
-		}
-		
-		public function setHeader()
-		{
-			$income_view = new View('templates/header');		
-			$this->template->set('financePlanner_header',$income_view);			
-		}
-		
-		public function setFooter()
-		{
-			$income_view = new View('templates/footer');		
-			$this->template->set('financePlanner_footer',$income_view);			
+			$this->template->title = 'Finance Planner - Income';
+			$this->template->styles[] = 'media/styles/income.css';
+			$this->template->scripts[] = 'media/scripts/income.js';
+			$income_view = View::factory('v_income');
+			$this->template->content->content = $income_view;
 		}
 	}
 	

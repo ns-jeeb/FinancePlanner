@@ -7,23 +7,16 @@
 		<meta name="author" content="Jeeb" />
 		<!-- Date: 2012-03-16 -->		
 		<?php foreach($styles as $file ) echo HTML::style($file),PHP_EOL ?>
-			
 		<?php foreach($scripts as $file) echo HTML:: script($file),PHP_EOL ?>
 		
 	</head>
 	<body>
-		<div id="mainDiv">
-			<div id="header">
-				<?php echo $financePlanner_header;?>
-			</div>
+		
+		<?php echo $header;?>
+		
+		<?php echo $content; ?>
 			
-			<div id="content">
-				<?php echo $financePlanner_content; ?>
-			</div>
-			
-			<div id="footer">
-				<?php echo $financePlanner_footer;?>
-			 </div>
-		 </div>		
+		<?php echo $footer;?>	 
+		
 	</body>
 </html>

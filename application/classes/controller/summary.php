@@ -4,24 +4,12 @@
 	{
 		public function action_index()
 		{
-			$summary_view = new View('summary/phpSummary');
-			$this->template->set('financePlanner_content',$summary_view);
-			$this->template->title = _('Summary');
-			$this->setHeader();
-			$this->setFooter();			
+			$this->template->title = 'Finance Planner - Summary';
+			$this->template->styles[] = 'media/styles/summary.css';
+			$this->template->scripts[] = 'media/scripts/summary.js';
+			$v_sumary = View::factory('v_summary');
+			$this->template->content->content = $v_sumary;	
 		}
-		
-		public function setHeader()
-		{
-			$summary_view = new View('templates/header');
-			$this->template->set('financePlanner_header',$summary_view);			
-		}
-		
-		public function setFooter()
-		{
-			$summary_view = new View('templates/footer');		
-			$this->template->set('financePlanner_footer',$summary_view);			
-		}	
 	}
 
 ?>

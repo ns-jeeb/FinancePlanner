@@ -1,2 +1,75 @@
+/* -- Classes for Specific Element -- */
+.item {
+	position:relative;
+	padding: 0px;
+	border:0px solid #ffffff
+}
+.item_pic {
+	display:inline;
+	background-color:gray;
+	margin:0px;
+	padding: 0px;
+	vertical-align:sub;
+	
+}
+.item_text_container {
+	position:absolute;
+	margin-left: 10px;
+	display:inline;
+	height: 60px;
+	width: 84%;
+}
+.item_options_container {
+	position:absolute;
+	height:60px; /* height applies the parent's padding. */
+	right:10px; /* parent's padding doesn't work on this, so right is 10px instead of 0px to give a little space on the right. */
+	display: inline;
+}
+.item_title {
+	margin-left: 10px;
+	display:inline;
+}
+.item_date {
+	margin-left: 10px;
+	display:inline;
+}
+.item_amount {
+	margin-left: 10px;
+	display:inline;
+	float:right;
+}
 
-
+.item_edit {	
+	position:absolute;
+	margin-top:15px;
+	padding:15px;
+	vertical-align:middle;
+	line-height:60px;
+	top:15px;
+}
+.item_delete {
+	display:inline;
+}
+.item_note {
+	margin-left: 10px;
+	display:block;
+}
+.item_vertical_line {
+	height:1px;
+	margin: 10px 0px 10px 0px;
+	padding:0px;
+	background-color:gray;
+}
+#container_total {
+	position:absolute;
+	bottom:0px;
+	margin-bottom:20px;
+	right:0px;
+	margin-right:20px;
+}
+#title_total {
+	display: inline;
+}
+#items_total {
+	display: inline;
+}

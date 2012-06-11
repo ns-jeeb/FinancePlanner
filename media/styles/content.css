@@ -1,15 +1,22 @@
 #div_content {
 	width:1000px;
 	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 40px;
-	background-color:#C3EDAB;
+	margin-right: auto;	
 	position: relative;
-	top:-20px;
+}
+
+#main_content {
+	-moz-box-shadow: 0px 5px 8px 2px #1A1A1A;
+	-webkit-box-shadow: 0px 5px 8px 2px #1A1A1A;
+	box-shadow: 0px 5px 8px 2px #1A1A1A;
+	background-color:#f3efef;
+	position:relative;
+	top:45px;
 	padding-top:40px;
 	padding-left:20px;
 	padding-right:20px;
 	padding-bottom:20px;
+	border:1px solid #303030;
 }
 
 

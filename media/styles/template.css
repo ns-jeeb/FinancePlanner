@@ -1,5 +1,12 @@
 body {
 	margin:0px;
+	height:100%;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #004c99), color-stop(1, #003366) );
+	background:-moz-linear-gradient( center top, #004c99 5%, #003366 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#004c99', endColorstr='#003366');
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-color:#003366;
 }
 
 

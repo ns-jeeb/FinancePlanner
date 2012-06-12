@@ -2,43 +2,47 @@
 .item {
 	position:relative;
 	padding: 0px;
+	height: auto;
 	border:0px solid #ffffff
 }
-.item_pic {
-	display:inline;
+.item_picture {
+	display:block;
 	background-color:gray;
-	margin:0px;
-	padding: 0px;
-	vertical-align:sub;
-	
 }
 .item_text_container {
-	position:absolute;
-	margin-left: 10px;
-	display:inline;
+	position: absolute;
+	top: 0px;
+	left: 60px;
+	padding: 0px 10px 0px 0px;
 	height: 60px;
-	width: 84%;
+	width: 818px;
+	background-color: blue;
 }
 .item_options_container {
 	position:absolute;
-	height:60px; /* height applies the parent's padding. */
-	right:10px; /* parent's padding doesn't work on this, so right is 10px instead of 0px to give a little space on the right. */
-	display: inline;
+	top: 0px; /* height applies the parent's padding. */
+	right:0px; /* parent's padding doesn't work on this, so right is 10px instead of 0px to give a little space on the right. */
+	height: 60px;
+	width: 70px;
+	text-align: right;
+	background-color: orange;
 }
 .item_title {
 	margin-left: 10px;
-	display:inline;
+	font-size: 14pt;
 }
 .item_date {
-	margin-left: 10px;
-	display:inline;
+	font-size: 12pt;
 }
 .item_amount {
-	margin-left: 10px;
-	display:inline;
-	float:right;
+	margin-right:10px;
+	height:100%;
+	font-size:12pt;
 }
-
+.item_note {
+	margin-left: 10px;
+	font-size: 10pt;
+}
 .item_edit {	
 	position:absolute;
 	margin-top:15px;
@@ -50,14 +54,15 @@
 .item_delete {
 	display:inline;
 }
-.item_note {
-	margin-left: 10px;
-	display:block;
-}
 .item_vertical_line {
 	height:1px;
 	margin: 10px 0px 10px 0px;
 	padding:0px;
+	background-color:gray;
+}
+.item_horizontal_seperator {
+	width:1px;
+	height:60px;
 	background-color:gray;
 }
 #container_total {
@@ -71,5 +76,17 @@
 	display: inline;
 }
 #items_total {
+	display: inline;
+}
+
+
+.trebuchet_font-family {
+	font-family: "Trebuchet MS", verdanana, sans-serif;
+	font-weight: normal;
+}
+.font_bold {
+	font-weight: bold;
+}
+.inline {
 	display: inline;
 }

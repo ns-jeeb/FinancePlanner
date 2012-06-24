@@ -2,18 +2,14 @@
 <!-- PHP Variable Declarations -->
 <?php 
 	$icons_location;
-	$list_income = array(
-		array('title'=>'Job','date'=>'14-April-2012', 'amount'=>toCurrency(1400.25), 'note'=>'Work at so and so place'),
-		array('title'=>'Job','date'=>'14-April-2012', 'amount'=>toCurrency(1400), 'note'=>'Work at so and so place'),
-		array('title'=>'Job','date'=>'14-April-2012', 'amount'=>toCurrency(1400), 'note'=>'Work at so and so place'),
-	);
+	$list_income;
 	$month = 'April';
 	$year = '2012';
 	$total_income = "$1,200.00";
 	
 	function toCurrency($number) {
 		$curr = number_format($number, 2, '.', ',');
-		return $curr;
+		return '$'.$curr;
 	}
 	
 ?>
@@ -42,7 +38,9 @@
 					<span class="item_date trebuchet_font-family"> <? echo $list_income[$i]['date']; ?> </span>
 				</td>
 				<td rowspan="2" width="150px" align="right">
-					<span class="item_amount trebuchet_font-family"> <? echo $list_income[$i]['amount']; ?> </span>
+					<? $amount = $list_income[$i]['amount']; ?>
+					<span class="item_amount trebuchet_font-family"> <? echo toCurrency($amount); ?> </span>
+					<? $total_income += $amount; ?>
 				</td>
 				<td rowspan="2" width="10px">
 					<div class="item_horizontal_seperator"></div>
@@ -101,7 +99,7 @@
 	<div id="container_total" >
 	
 		<div class="item_vertical_line"></div>
-		<span id="title_total" class="trebuchet_font-family">Your total income is <span id="items_total"><? echo $total_income; ?></span></span>
+		<span id="title_total" class="trebuchet_font-family">Your total income is <span id="items_total"><? echo toCurrency($total_income); ?></span></span>
 	
 	</div>
 	

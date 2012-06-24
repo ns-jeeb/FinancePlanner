@@ -1,0 +1,70 @@
+/* -- Classes for Specific Element -- */
+#items {
+	margin-top:30px;
+}
+#title_month_year {
+	font-size:12pt;
+}
+#month_year {
+	font-size:14pt;
+	margin-left:6px;
+}
+.item_picture {
+	display:block;
+	background-color:gray;
+}
+.item_title {
+	margin-left: 10px;
+	font-size: 14pt;
+}
+.item_date {
+	font-size: 12pt;
+}
+.item_amount {
+	margin-right:10px;
+	height:100%;
+	font-size:12pt;
+}
+.item_note {
+	margin-left: 10px;
+	font-size: 10pt;
+}
+
+#item_new{
+	visibility:collapse;
+}
+.item_horizontal_seperator {
+	width:1px;
+	height:60px;
+	background-color:gray;
+}
+.item_vertical_line {
+	height:1px;
+	margin: 10px 0px 10px 0px;
+	padding:0px;
+	background-color:gray;
+}
+#container_total {
+	position:absolute;
+	bottom:0px;
+	margin-bottom:20px;
+	right:0px;
+	margin-right:20px;
+}
+#title_total {
+	font-size:12pt;
+}
+#items_total {
+	font-size:14pt;
+	margin-left:6px;
+}
+.trebuchet_font-family {
+	font-family: "Trebuchet MS", verdanana, sans-serif;
+	font-weight: normal;
+}
+.font_bold {
+	font-weight: bold;
+}
+.inline {
+	display: inline;
+}

@@ -3,6 +3,7 @@
 	class Controller_FinancePlanner extends Controller_Template
 	{
 		public $template;
+		public $config_locations;
 		
 		public function before()
 		{
@@ -10,21 +11,22 @@
 			if($this->auto_render)
 			{
 				$this->template = View::factory('template/financeplanner');
+				$this->config_locations = Kohana::$config->load('locations');
 				$styles = array
 				(
-					'media/styles/template.css',
-					'media/styles/content.css',
-					'media/styles/menu_bar.css',
-					'media/styles/header.css',
-					'media/styles/footer.css',
+					$this->config_locations->get('styles_template').'template.css',
+					$this->config_locations->get('styles_template').'content.css',
+					$this->config_locations->get('styles_template').'menu_bar.css',
+					$this->config_locations->get('styles_template').'header.css',
+					$this->config_locations->get('styles_template').'footer.css',
 				);
 				$scripts = array 
 				(
-					'media/scripts/jquery.js',
-					'media/scripts/header.js',	
-					'media/scripts/content.js',
-					'media/scripts/footer.js',
-					'media/scripts/menu_bar.js',
+					$this->config_locations->get('scripts_template').'jquery.js',
+					$this->config_locations->get('scripts_template').'header.js',	
+					$this->config_locations->get('scripts_template').'content.js',
+					$this->config_locations->get('scripts_template').'footer.js',
+					$this->config_locations->get('scripts_template').'menu_bar.js',
 				);
 				$this->template->title = 'Finance Planner';
 				$this->template->header = View::factory('template/header');
